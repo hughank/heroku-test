@@ -6,6 +6,9 @@ const app = express()
 app.get('/test', (req, res) => res.send('Awesome!!'))
 
 app.get('/data', (req, res) => {
+
+    console.log('Hello world');
+
     res.json({
         id: 1,
         name: 'Coolname'
